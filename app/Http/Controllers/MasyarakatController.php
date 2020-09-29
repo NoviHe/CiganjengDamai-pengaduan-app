@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Masyarakat;
+use Barryvdh\DomPDF\PDF;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
 

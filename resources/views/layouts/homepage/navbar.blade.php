@@ -20,10 +20,10 @@
         </li>
         @endif
         <li class="nav-item ">
-          <a class="nav-link" href="/#how-to">How to Use</a>
+          <a class="nav-link" href="/#how-to">Cara Bekerja</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="/#contact">Contac Us</a>
+          <a class="nav-link" href="/#contact" data-toggle="modal" data-target="#manual">Manual</a>
         </li>
       </ul>
 
@@ -83,3 +83,92 @@
   });
 </script>
 @endpush
+
+<!-- Modal -->
+<div class="modal fade" id="manual" tabindex="-1" aria-labelledby="manualLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="manualLabel">Manual Aplikasi</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+              <!-- Section: Horizontal stepper -->
+    <section class="text-center my-5" data-wow-delay="0.3s">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-12">
+          <ul class="stepper horizontal" id="horizontal-stepper">
+            <li class="step active">
+              <div class="step-title waves-effect waves-dark">Login / Register</div>
+              <div class="step-new-content">
+                <div class="row">
+                  <div class="md-form col-12 ml-auto">
+                    <div class="step-content lighten-3" style="width:100%;">
+                      <p>Sebelum melapor di wajibkan untuk login atau daftar bila belum punya akun</p>
+                      <img src="{{asset('img/manual_user/login_bro.png')}}" width="70%" alt="">
+                      <p>Daftarkan diri anda dengan mengisi data data seperi nik untuk identifikasi dan nomor telp untuk dihubungi</p>
+                      <img src="{{asset('img/manual_user/register_here.png')}}" width="90%" alt="">
+                      <p>Bila sudah punya akun silahkan masuk untuk memulai</p>
+                      <img src="{{asset('img/manual_user/login_page.png')}}" width="90%" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step-title waves-effect waves-dark">Mulai Melapor</div>
+              <div class="step-new-content">
+                  <div class="row">
+                    <div class="md-form col-12 ml-auto">
+                      <div class="step-content lighten-3" style="width:100%;">
+                        <p>Mulai melakukan laporan dengan mengisi laporan nya, kemudian isikan jenis laporan nya, set tnggal kejadian, dan jangan lupa masukan gambar bila ada</p>
+                        <img src="{{asset('img/manual_user/mulai_lapor.png')}}" width="90%" alt="">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step-title waves-effect waves-dark">Laporan Masuk</div>
+              <div class="step-new-content">
+                  <div class="row">
+                    <div class="md-form col-12 ml-auto">
+                      <div class="step-content lighten-3" style="width:100%;">
+                        <p>Bila sudah mengisi laporan akan masuk ke menu laporan saya, di situ semua laporan anda akan di tampung</p>
+                        <img src="{{asset('img/manual_user/daftar_laporan.png')}}" width="90%" alt="">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step-title waves-effect waves-dark">Hasil</div>
+              <div class="step-new-content">
+                  <div class="row">
+                    <div class="md-form col-12 ml-auto">
+                      <div class="step-content lighten-3" style="width:100%;">
+                        <p>Setelah di review petugas hasil akan keluar, ada dua hasil yang keluar yaitu</p>
+                        <img src="{{asset('img/manual_user/slesai.png')}}" width="50%" alt="">
+                        <p>yang berarti laporan di terima dan akan di tindak lanjuti, atau</p>
+                        <img src="{{asset('img/manual_user/ditolak.png')}}" width="50%" alt="">
+                        <p>yang berarti laporan di tolak karena berbagai hal, seperti kurang isi jelas, gambar kurang jelas, atau data palsu</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>

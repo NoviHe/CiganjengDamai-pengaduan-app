@@ -6,6 +6,7 @@ use App\Jenis;
 use App\Masyarakat;
 use App\Pengaduan;
 use App\Tanggapan;
+use Barryvdh\DomPDF\PDF;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -200,5 +201,23 @@ class PengaduanController extends Controller
         }
         // dd($dt);
         return view('masyarakat.pengaduan.show', compact('data', 'dt'));
+    }
+
+    public function cetak_pdf()
+    {
+        $pengaduan = Pengaduan::all();
+
+        return view('petugas.pengaduan.report_pdf', compact('pengaduan'));
+
+        // $pdf = PDF::loadview('petugas.pengaduan.report_pdf', ['pengaduan' => $pengaduan]);
+
+        // return $pdf->stream();
+        // return $pdf->download('laporan-pengaduan-pdf');
+    }
+
+    public function datalist()
+    {
+        $data = Pengaduan::get();
+        return view('petugas.pengaduan.index', json_encode($data));
     }
 }

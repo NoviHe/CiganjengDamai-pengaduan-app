@@ -31,6 +31,7 @@
 @include('layouts.admin.footer')
 <!-- SCRIPTS -->
 <script type="text/javascript" src="{{url('admin/js/jquery-3.4.1.min.js')}}"></script>
+
 <!-- Bootstrap tooltips -->
 <script type="text/javascript" src="{{url('admin/js/popper.min.js')}}"></script>
 <!-- Bootstrap core JavaScript -->
@@ -45,6 +46,7 @@
 <script type="text/javascript" src="{{asset('admin/js/addons/datatables.min.js')}}"></script>
 
 <script type="text/javascript" src="{{asset('sweetalert2/package/dist/sweetalert2.all.min.js')}}"></script>
+
 
 @include('sweetalert::alert')
 

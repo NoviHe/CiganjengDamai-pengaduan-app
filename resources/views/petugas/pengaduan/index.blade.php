@@ -17,11 +17,11 @@
     </div>
     <div class="row">
         <div class="col-md-2">
-            <a href="">
+            {{-- <a href="{{route('pengaduan.cetakPdf')}}">
             <button class="btn btn-primary btn-block"><i class="fas fa-print mr-1"></i> Cetak</button></a>
             <br>
-            <a href="">
-            <button class="btn btn-primary  btn-block"><i class="fas fa-file-excel mr-1"></i> Excel</button></a>
+            <a href="#">
+            <button class="btn btn-primary  btn-block"><i class="fas fa-file-excel mr-1"></i> Excel</button></a> --}}
         </div>
         <div class="col-md-10">
             <!-- Table with panel -->

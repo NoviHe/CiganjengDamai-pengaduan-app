@@ -68,6 +68,8 @@ Route::group(['middleware' => ['auth:petugas']], function () {
         Route::get('/data/pengaduan', 'PengaduanController@index')->name('pengaduan.index');
         Route::get('/data/pengaduan/{id}', 'PengaduanController@show')->name('pengaduan.show');
         Route::get('/data/pengaduan/{id}/delete', 'PengaduanController@destroy');
+        // Route::get('/data/pengaduan/cetak', 'PengaduanController@cetak_pdf')->name('pengaduan.cetakPdf'); // cetak PDF
+        Route::get('/data/pengaduan/cetak', 'PengaduanController@datalist')->name('pengaduan.cetak'); // cetak PDF
         // Data Tanggapan
         Route::get('/data/tanggapan', 'TanggapanController@index')->name('tanggapan.index');
         Route::get('/data/tanggapan/{id}', 'TanggapanController@show')->name('tanggapan.show');

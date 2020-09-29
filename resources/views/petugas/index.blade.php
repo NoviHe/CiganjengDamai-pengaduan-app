@@ -164,31 +164,6 @@
                         <!-- First column -->
                         <div class="col-md-12">
 
-                        <!-- Date select -->
-                        <p class="lead"><span class="badge purple p-2">Data range</span></p>
-                        <select class="mdb-select md-form">
-                            <option value="" disabled selected>Choose time period</option>
-                            <option value="1">Today</option>
-                            <option value="2">Yesterday</option>
-                            <option value="3">Last 7 days</option>
-                            <option value="3">Last 30 days</option>
-                            <option value="3">Last week</option>
-                            <option value="3">Last month</option>
-                        </select>
-
-                        <!-- Date pickers -->
-                        <p class="lead pt-3 pb-2"><span class="badge purple p-2">Custom date</span></p>
-                        <div class="d-flex justify-content-between">
-                            <div class="md-form w-100 mr-2">
-                            <input placeholder="Selected date" type="text" id="from" class="form-control datepicker">
-                            <label for="date-picker-example">From</label>
-                            </div>
-                            <div class="md-form w-100 ml-2">
-                            <input placeholder="Selected date" type="text" id="to" class="form-control datepicker">
-                            <label for="date-picker-example">To</label>
-                            </div>
-                        </div>
-
                         </div>
                         <!-- First column -->
 

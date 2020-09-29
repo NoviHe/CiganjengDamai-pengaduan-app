@@ -49,10 +49,12 @@
                     <h6 class="pb-1"><i class="fas {{$b}}"></i><strong> {{$a}}</strong></h6>
                 </a>
                 <h4 class="mb-4"><strong>{{$dt->getJenis->nama}}</strong></h4>
-                <p>{{$dt->isi_laporan}}</p>
+                    <div class="special-text">
+                        <p>{{$dt->isi_laporan}}</p>
+                    </div>
                 <p>by <a><strong>{{$dt->getUser->nama}}</strong></a>, {{$dt->tgl_pengaduan}}</p>
                 <div class="btn-group">
-                    <a class="btn btn-purple" href="">Action</a>
+                    <a class="btn btn-purple expand-button">More</a>
                     <button type="button" class="btn btn-purple btn-sm text-white dropdown-toggle dropdown-toggle-split"
                         id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                         data-reference="parent">
@@ -78,6 +80,13 @@
     </section>
 </div>
 @endsection
+@push('css')
+    <style>
+        .special-text{
+            overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+        }
+    </style>
+@endpush
 @push('js')
 <script>
     $('.hapus').click(function(){

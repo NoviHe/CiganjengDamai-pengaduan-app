@@ -18,14 +18,14 @@
     <div class="row">
         <div class="col-md-2 animated fadeInLeft delay-1s">
             <a href="{{route('petugas.create')}}" class="btn btn-success btn-block"><i class="fas fa-plus mr-1"></i> Tambah</a>
-            <br>
+            {{-- <br>
             <br>
             <a href="#" class="btn btn-primary btn-block"><i class="fas fa-print mr-1"></i> Cetak</a>
             <br>
             <br>
             <a href="#" class="btn btn-primary  btn-block"><i class="fas fa-file-excel mr-1"></i>
                 Excel
-            </a>
+            </a> --}}
         </div>
         <div class="col-md-10 animated fadeInUp delay-1s" >
         
