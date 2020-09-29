@@ -7,11 +7,11 @@
 <img align="center" src="http://ForTheBadge.com/images/badges/built-with-love.svg"> <img align="center" src="http://ForTheBadge.com/images/badges/uses-html.svg"> <img align="center" src="http://ForTheBadge.com/images/badges/makes-people-smile.svg"> <img align="center" src="http://ForTheBadge.com/images/badges/built-by-developers.svg">
 </p>
 
-## Tentang Ngapak Resto
+## Tentang Ciganjeng Damai
 
 Ciganjeng Damai merupakan aplikasi pengaduan masyarakat yang dibuat oleh <a href="https://github.com/NoviHe">Novi Herlambang</a>. , Sebuah Website yang bisa melaporkan berbagai kejadian di ciganjeng yang kemudian akan di tanggapi oleh operator.
 
-## Fitur dari Ngapak Resto
+## Fitur dari Ciganjeng Damai
 - Authentikasi Admin, Operator & Masyarakat.
 - List & CRUD Petugas, Masyarakat, Pengaduan, Tanggapan.
 - Sweet Alert 2 Included.
